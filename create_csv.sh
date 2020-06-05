@@ -1,4 +1,4 @@
-hadoop fs -rm /LDSA/subset/files.csv;
+hadoop fs -rm /LDSA/dataset/files.csv;
 hadoop fs -ls -R /LDSA/dataset | grep '.h5$'| python -c '
 import sys
 with open("/home/ubuntu/files.csv", "w") as myfile:
